@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="form">
+<form onsubmit="return validate()" id="contactform" action="message.html" >
+<Legend>
+<label>First Name:</label>
+<input type="text" placeholder="First Name" id="fname"class="formgroup" >
+<br><br>
+<label>SurName:</label>
+<input type="etx" placeholder="Surname" id="sname" class="formgroup">
+<br><br>
+<label>Telephone:</label>
+<input type="phone" placeholder="Phone No:" id="phone" class="formgroup">
+<br><br>
+<label>Email:</label>
+<input type="email" placeholder="Email" id="email" class="formgroup">
+<br><br>
+<label>Date of Birth:</label>
+<input type="date" placeholder="Date of Birth" id="dob" class="formgroup">
+<br><br>
+
+<ul id="radio" required >
+<label>Gender:</label>
+<input type="radio" name="radio">Male
+<input type="radio" name="radio"> Female
+</ul>
+<br><br>
+
+<label for="children">Children</label>
+<input type="number" id="children">
+<!-- <label>Children</label>
+<select id="Children" required>
+    <Option>1</Option>
+    <Option>2</Option>
+    <Option>3</Option>
+    <Option>4</Option>
+    <Option>5</Option>
+</select> -->
+<br><br>
+<button type="submit" id="submit"> Submit</button>
+<button type="Reset" id="reset">Reset</button>
+</Legend>
+</form>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
