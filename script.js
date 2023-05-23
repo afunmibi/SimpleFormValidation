@@ -37,8 +37,6 @@ let radio = document.getElementById('radio');
                 alert('No. of children must be provided');
                 return false;
 
-            
-
             }else{
                 alert('Your message has been recorded')
             }
@@ -49,7 +47,7 @@ let radio = document.getElementById('radio');
             function validate(){
 
             if(fname.value==='' || sname.value ==='' || phone.value===''  || email.value===''  || dob.value===''  || children.value==='' || radio.value===''){
-                alert('Input must be filled');
+                alert('Input must be filled out');
                 return false;
             }else{
                 alert('Message received.')
